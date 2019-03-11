@@ -10,6 +10,7 @@ export class WorkCardComponent implements OnInit {
   @Input() projectPreview: any;
   @Input() projectTitle1: string;
   @Input() projectTitle2: string;
+  @Input() projectColor: string;
   @Input() projectRole: string;
 
   @Output() onView: EventEmitter<any> = new EventEmitter();

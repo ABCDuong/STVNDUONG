@@ -14,13 +14,15 @@ export class WorksComponent implements OnInit {
         'title1': 'snap',
         'title2': 'Clinical',
         'role': 'Lead Front-End Software Engineer',
-        'preview': 'assets/images/snapClinicalPatientPage.png'
+        'preview': 'assets/images/snapClinicalPatientPage.png',
+        'color': '#8F57EB'
       },
       {
         'title1': 'Stem',
         'title2': 'Immune',
         'role': 'UX Designer',
-        'preview': 'assets/images/ELN/project_main.png'
+        'preview': 'assets/images/ELN/project_main.png',
+        'color': '#2D9CDB'
       }
     ],
     'self': [
@@ -28,13 +30,15 @@ export class WorksComponent implements OnInit {
         'title1': 'REG',
         'title2': 'EX',
         'description': 'REGEX and references and tester',
-        'preview': ''
+        'preview': '',
+        'color': '#F1C7C7'
       },
       {
         'title1': 'Cafe ',
         'title2': 'Bassam',
         'description': 'Local San Diego Coffee House',
-        'preview': ''
+        'preview': 'assets/images/bassam.jpg',
+        'color': '#F29856'
       }
     ]
   };

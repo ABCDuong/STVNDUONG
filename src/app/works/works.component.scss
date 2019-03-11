@@ -11,15 +11,17 @@
 
 .works-title {
   font-family: $secondary-font;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1.25rem;
   margin-left: -42rem;
   margin-top: 5rem;
   margin-bottom: 0.5rem;
   width: 20rem;
+  letter-spacing: 0.25px;
+
 
   .work-title-highlight {
-    font-weight: 700;
+    font-weight: 800;
   }
 }
 
