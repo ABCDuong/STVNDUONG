@@ -8,7 +8,8 @@
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "deploy": "npm i & ng build --prod --base-href https://ABCDuong.github.io/StevenDuongv2019/ & ngh "
   },
   "private": true,
   "dependencies": {
