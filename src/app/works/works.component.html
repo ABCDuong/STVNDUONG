@@ -1,27 +1,35 @@
 <div class="works-component">
-  <div class="works-title" fxLayoutAlign="start start">
-    Projects at<span class="work-title-highlight">&nbsp;SnapIoT</span>
-    <div class="works-title-dash"></div>
-  </div>
-  <div class="works-container" fxLayout="row wrap" fxLayoutAlign="center center">
-    <div *ngFor="let work of works.snapIoT" class="work-card">
-      <app-work-card 
-        [projectPreview]="work.preview"
-        [projectTitle]="work.title"
-        [projectRole]="work.role"
-        (onView)="getRoute(work.title)"></app-work-card>
+  <div class="works-container" fxLayout="column" fxLayoutAlign="center center">
+    <div class="works-title">
+      Projects at<span class="work-title-highlight">&nbsp;SnapIoT</span>
+      <div class="works-title-dash"></div>
+    </div>
+    <div fxLayout="row wrap" fxLayoutAlign="center center">
+      <div *ngFor="let work of works.snapIoT" class="work-card">
+        <app-work-card 
+          [projectPreview]="work.preview"
+          [projectTitle1]="work.title1"
+          [projectTitle2]="work.title2"
+          [projectRole]="work.role"
+          (onView)="getRoute(work.title1 + work.title2)"></app-work-card>
+      </div>
     </div>
   </div>
   
-  <div class="works-title">
-    <span class="work-title-highlight">Self</span> Projects
-    <div class="works-title-dash"></div>
-  </div>
-  <div class="works-container" fxLayout="row wrap" fxLayoutAlign="center center">
+  <div class="works-container" fxLayout="column" fxLayoutAlign="center center">
+    <div class="works-title">
+      <span class="work-title-highlight">Self</span>&nbsp;Projects
+      <div class="works-title-dash"></div>
+    </div>
+    <div fxLayout="row wrap" fxLayoutAlign="center center">
       <div *ngFor="let work of works.self" class="work-card">
-          <app-work-card 
-            [projectTitle]="work.title"
-            [projectRole]="work.description"></app-work-card>
-        </div>
+        <app-work-card 
+        [projectPreview]="work.preview"
+          [projectTitle1]="work.title1"
+          [projectTitle2]="work.title2"
+          [projectRole]="work.description"
+          (onView)="getRoute(work.title1 + work.title2)"></app-work-card>
+      </div>
+    </div>
   </div>
 </div>

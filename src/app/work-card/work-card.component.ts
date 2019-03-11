@@ -8,7 +8,8 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 export class WorkCardComponent implements OnInit {
 
   @Input() projectPreview: any;
-  @Input() projectTitle: string;
+  @Input() projectTitle1: string;
+  @Input() projectTitle2: string;
   @Input() projectRole: string;
 
   @Output() onView: EventEmitter<any> = new EventEmitter();

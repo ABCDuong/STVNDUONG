@@ -11,24 +11,28 @@ export class WorksComponent implements OnInit {
   works: any = {
     'snapIoT': [
       {
-        'title': 'snapClinical',
+        'title1': 'snap',
+        'title2': 'Clinical',
         'role': 'Lead Front-End Software Engineer',
         'preview': 'assets/images/snapClinicalPatientPage.png'
       },
       {
-        'title': 'StemImmune',
+        'title1': 'Stem',
+        'title2': 'Immune',
         'role': 'UX Designer',
         'preview': 'assets/images/ELN/project_main.png'
       }
     ],
     'self': [
       {
-        'title': 'REGEX',
+        'title1': 'REG',
+        'title2': 'EX',
         'description': 'REGEX and references and tester',
         'preview': ''
       },
       {
-        'title': 'Cafe Bassam',
+        'title1': 'Cafe ',
+        'title2': 'Bassam',
         'description': 'Local San Diego Coffee House',
         'preview': ''
       }
