@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,800|Muli:300,400,600,700,800');
+
+$light-blue: #56CCF2;
+$medium-blue: #2D9CDB;
+$off-white: #EFF6FB;;
+$main-font: 'Montserrat', sans-serif;
+$secondary-font: 'Muli', sans-serif;
+
+/**
+ * ----------------------------------------
+ * animation fade-in
+ * ----------------------------------------
+ */
+ @-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fade-in {
+	-webkit-animation: fade-in 0.95s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in 0.95s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+body {
+  font-family: $main-font;
+  margin: 0 !important;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}

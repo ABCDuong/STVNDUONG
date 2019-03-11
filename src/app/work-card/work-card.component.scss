@@ -1,0 +1,23 @@
+@import '../../styles.scss';
+
+.card-container {
+  border-radius: 8px;
+  border: none;
+  box-shadow: 1px 1px 5px #777;
+  width: 350px;
+  height: auto;
+}
+
+.project-preview img {
+  width: 350px;
+  height: 200px;
+  border-radius: 8px 8px 0 0;
+}
+
+
+.work-view-btn {
+  
+  &:hover {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,290 @@
+@import '../../styles.scss';
+
+.landing-self-container {
+  left: 0;
+  position: fixed;
+  display: block;
+  width: 50%;
+  height: 100%;
+  background: url("../../assets/images/circleart.png") no-repeat;
+  background-size: contain;
+  background-position-y: 35%;
+  padding: 0 5rem;
+
+  .landing-self-name {
+    letter-spacing: 2.5px;
+    font-family: $main-font;
+    margin-top: -8rem;
+  }
+  .landing-self-role {
+    letter-spacing: 1.75px;
+    font-family: $secondary-font;
+    font-weight: 800;
+  }
+  .landing-self-name,
+  .landing-self-role {
+    font-size: 2.5vw;
+    -webkit-text-stroke-color: #FFF;
+    -moz-text-stroke-width: 0.75px;  
+    -webkit-text-stroke-width: 0.75px;
+  }
+
+  .role-info {
+    white-space: nowrap;
+    margin: 0;
+  }
+  .role-x {
+    font-size: 1.75vw;
+  }
+}
+
+.landing-project-container {
+  right: 0;
+  position: fixed;
+  display: block;
+  width: 50%;
+  height: 100%;
+  background-color: $off-white;
+  transform: translateY(-3.875rem);
+  padding: 0 5rem;
+
+  .landing-project-images {
+    img {
+      max-height: 100%;
+      max-width: 100%;
+      height: auto;
+      object-fit: contain;
+
+      &:nth-child(1) {
+        width: 50%;
+        min-width: 175px;
+      }
+      &:nth-child(2) {
+        width: 50%;
+        min-width: 175px;
+      }
+    }
+  }
+
+  .landing-project-info {
+    width: 80%;
+  }
+  .project-featuring {
+    font-size: 0.875vw;
+    letter-spacing: 1px;
+    line-height: 0;
+    transform: translateY(0.5rem);
+  }
+
+  .project-title,
+  .project-description,
+  .project-tech {
+    font-family: $secondary-font;
+  }
+  .project-title {
+    font-weight: 300;
+    font-size: 2.5vw;
+    letter-spacing: 1px;
+    line-height: 0;
+
+    .project-title-bold {
+      font-weight: 800;
+    }
+  }
+  
+  .project-description {
+    letter-spacing: 0.75px;
+    padding-bottom: 3rem;
+    width: 110%;
+    font-size: 0.85vw;
+  }
+
+  .project-tech {
+    margin: 0;
+    font-size: 0.95vw;    
+    flex-flow: column;
+    display: flex;
+    white-space: nowrap;
+  }
+
+  .view-btn {
+    margin-top: 2rem;
+    font-family: $secondary-font;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-align: center;
+    border-radius: 3px;
+    border: none;
+    background-color: $medium-blue;
+    width: 5.95rem;
+    height: 2.15rem;
+    &:hover {
+      cursor: pointer;
+    }
+
+    .btn-text {
+      color: #FFF;
+      margin: 0;
+      line-height: 190%;
+      font-size: 1rem;
+    }
+  }
+}
+
+.mobile-show {
+  display: none !important;
+}
+
+
+
+@media screen and (max-width: 1500px) {
+  .landing-self-container {
+    .landing-self-name,
+    .landing-self-role {
+      font-size: 2rem;
+      -moz-text-stroke-width: 0.5px;  
+      -webkit-text-stroke-width: 0.5px;
+    }
+  }
+
+  .landing-project-container {
+    .landing-project-info {
+      .project-featuring {
+        font-size: 1.25vw;
+      }
+      .project-title {
+        font-size: 2.75rem;
+      }
+      .project-description {
+        font-size: 0.95rem;
+      }
+      .project-tech {
+        font-size: 1.5vw;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .landing-self-container {
+    .landing-self-name {
+      font-size: 3.25vw;
+      white-space: nowrap;
+      -moz-text-stroke-width: 0.15px;  
+      -webkit-text-stroke-width: 0.15px;
+    }
+    .landing-self-role {
+      font-size: 2.35vw;
+      -moz-text-stroke-width: 0.25px;  
+      -webkit-text-stroke-width: 0.25px;
+    }
+  }
+  .landing-project-container {
+    .landing-project-info {
+      .project-featuring {
+        font-size: 2vw;
+      }
+      .project-title {
+        font-size: 5.75vw;
+      }
+      .project-description {
+        font-size: 1.85vw;
+      }
+      .project-tech {
+        font-size: 2vw;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1065px) {
+  .home-container {
+    margin-top: 3rem;
+  }
+  .landing-self-container,
+  .landing-project-container {
+    width: 100%;
+    position: relative;
+    right: unset;
+    left: unset;
+    padding: 50vw 8vw;
+  }
+
+  .landing-self-container {
+    .landing-self-name {
+      font-size: 5vw;
+      margin-top: -5rem;
+      -moz-text-stroke-width: 0.15px;  
+      -webkit-text-stroke-width: 0.15px;
+    }
+    .landing-self-role {
+      font-size: 5vw;
+      -moz-text-stroke-width: 0.25px;  
+      -webkit-text-stroke-width: 0.25px;
+    }
+    .role-x {
+      font-size: 3.15vw;
+    }
+  }
+
+  .landing-project-container {
+    transform: initial;
+
+    .mobile-show {
+      display: block !important;
+    }
+
+    .project-featuring {
+      font-size: 1.15rem;
+    }
+    .project-title {
+      font-size: 3.5rem;
+    }
+    .project-description {
+      font-size: 1.25rem;
+      width: 100%;
+    }
+    .project-tech {
+      font-size: 1.35rem;
+      display: flex !important;
+      flex-direction: column !important;
+    }
+  }
+
+  .mobile-hidden {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .landing-self-container {
+    padding: 18rem 2rem;
+    .landing-self-name {
+      font-size: 1.35rem;
+      white-space: nowrap;
+      -moz-text-stroke-width: 0.05px;  
+      -webkit-text-stroke-width: 0.05px;
+    }
+    .landing-self-role {
+      font-size: 0.95rem;
+      -moz-text-stroke-width: 0.15px;  
+      -webkit-text-stroke-width: 0.15px;
+    }
+  }
+  .landing-project-container {
+    padding: 8rem 2rem;
+    .project-featuring {
+      font-size: 0.85rem !important;
+    }
+    .project-title {
+      font-size: 2.25rem;
+    }
+    .project-description {
+      font-size: 0.85rem;
+      width: 85%;
+    }
+    .project-tech {
+      font-size: 0.85rem;
+    }
+  }
+}

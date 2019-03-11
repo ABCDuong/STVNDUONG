@@ -1,0 +1,26 @@
+@import '../../styles.scss';
+
+.works-component {
+  margin: 2rem auto;
+  width: 80vw;
+}
+
+.work-card {
+  margin: 1rem 3rem;
+}
+
+.works-title {
+  font-family: $secondary-font;
+  font-weight: 300;
+  font-size: 1.25rem;
+  margin-left: 5rem;
+  margin-top: 5rem;
+
+  .work-title-highlight {
+    font-weight: 700;
+  }
+}
+
+.works-container {
+  margin: 2rem auto;
+}

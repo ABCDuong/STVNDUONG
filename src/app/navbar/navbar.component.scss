@@ -1,0 +1,73 @@
+@import '../../styles.scss';
+
+a {
+  text-decoration: none;
+}
+
+.nav-bar {
+  height: 3.875rem;
+  width: 50%;
+  transform: translate(2rem, 1rem);
+  @extend .fade-in;
+}
+
+.nav-link {
+  position: relative;
+  font-family: $main-font;
+  letter-spacing: 1px;
+  padding: 0 1rem;
+
+  &:hover {
+    cursor: pointer;
+
+    .nav-underline {
+      display: block;
+      @extend .fade-in;
+    }
+  }
+}
+
+.nav-link-active {
+  font-weight: 700;
+  
+  .nav-underline {
+    display: block;
+    @extend .fade-in;
+  }
+}
+
+.nav-underline {
+  position: absolute;
+  display: none;
+  width: 50%;
+  height: 0.25rem;
+  background-color: $light-blue;
+  bottom: 0.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  content: "";
+}
+
+.nav-bar-middle {
+  height: 3.875rem;
+  width: 28%;
+  margin: auto;
+  transform: translate(2rem, 1rem);
+  @extend .fade-in;
+}
+
+@media screen and (max-width: 640px) {
+  .nav-bar,
+  .nav-bar-middle {
+    width: 100%;
+    .nav-logo {
+      width: 2.5rem;
+    }
+    .nav-link {
+      font-size: 0.785rem;
+      padding: 0 0.5rem;
+    }
+  }
+
+
+}

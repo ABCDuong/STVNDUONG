@@ -1,0 +1,16 @@
+<div [ngClass]="currRoute === 'home' ? 'nav-bar' : 'nav-bar-middle'" fxLayout="row nowrap" fxLayoutAlign="start center">
+  <img class="nav-link nav-logo" src="../assets/images/Logo-sm.png" alt="logo" (click)="getRoute('home')">
+
+  <div class="nav-link" [ngClass]="currRoute === 'work' ? 'nav-link-active' : ''" (click)="getRoute('work')">
+    <p>work</p>
+    <div class="nav-underline"></div>
+  </div>
+  <div class="nav-link" [ngClass]="currRoute === 'contact' ? 'nav-link-active' : ''" (click)="getRoute('contact')">
+    <p>contact</p>
+    <div class="nav-underline"></div>
+  </div>
+  <div class="nav-link" (click)="getResume()">
+    <p>resume</p>
+    <div class="nav-underline"></div>
+  </div>
+</div>
