@@ -13,12 +13,12 @@ export class WorksComponent implements OnInit {
       {
         'title': 'snapClinical',
         'role': 'Lead Front-End Software Engineer',
-        'preview': '../../assets/images/snapClinicalPatientPage.png'
+        'preview': 'assets/images/snapClinicalPatientPage.png'
       },
       {
         'title': 'StemImmune',
         'role': 'UX Designer',
-        'preview': '../../assets/images/ELN/project_main.png'
+        'preview': 'assets/images/ELN/project_main.png'
       }
     ],
     'self': [
