@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit, ElementRef } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -6,11 +6,14 @@ import { Router } from '@angular/router';
   templateUrl: './works.component.html',
   styleUrls: ['./works.component.scss']
 })
-export class WorksComponent implements OnInit {
+export class WorksComponent implements OnInit, AfterViewInit {
 
   works: any;
 
-  constructor(private router: Router) {
+  constructor(
+    private router: Router,
+    private elementRef: ElementRef
+  ) {
     this.works  = {
       'snapIoT': [
         {
@@ -34,7 +37,7 @@ export class WorksComponent implements OnInit {
         {
           'title1': 'REG',
           'title2': 'EX',
-          'description': 'REGEX and references and tester',
+          'description': 'REGEX references and tester',
           'preview': '',
           'color': '#F1C7C7',
           'route': ''
@@ -51,9 +54,13 @@ export class WorksComponent implements OnInit {
     };
   }
 
-   ngOnInit() {
+  ngOnInit() {
 
-   }
+  }
+
+  ngAfterViewInit() {
+    this.elementRef.nativeElement.ownerDocument.body.style.backgroundColor = '#EFEFEB';
+  }
 
   getRoute(route: string) {
     if (!route) {

@@ -1,0 +1,45 @@
+@import '../../styles.scss';
+
+:host {
+  background-color: #EFEFEB;
+  height: 100%;
+}
+
+.project-descr-container {
+  width: 45vw;
+  margin: 5rem auto 3.5rem auto;
+  font-family: $secondary-font;
+
+  img {
+    width: 100%;
+    max-width: 400px;
+  };
+
+  .project-section-img {
+    margin: 5rem auto;
+    max-width: 100%;
+  }
+}
+.project-intro-text {
+  margin: 3.15rem auto;
+}
+.project-title {
+  font-weight: 400;
+  font-size: 1.75rem;
+  letter-spacing: 0.5px;
+}
+.project-title-bold {
+  font-weight: 800;
+}
+.project-title-underline {
+  width: 6.75rem;
+  height: 0.175rem;
+  background-color: #8F57EB;
+  margin-top: 0.315rem;
+}
+.project-descr {
+  width: 92%;
+  line-height: 128%;
+  letter-spacing: 0.05px;
+}
+
