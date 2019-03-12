@@ -56,6 +56,20 @@ a {
   @extend .fade-in;
 }
 
+
+@media screen and (max-width: 1150px) {
+  .nav-bar,
+  .nav-bar-middle {
+    width: 100%;
+    .nav-logo {
+      width: 2.5rem;
+    }
+    .nav-link {
+      font-size: 0.95rem;
+      padding: 0 0.5rem;
+    }
+  }
+}
 @media screen and (max-width: 640px) {
   .nav-bar,
   .nav-bar-middle {
@@ -68,6 +82,4 @@ a {
       padding: 0 0.5rem;
     }
   }
-
-
 }

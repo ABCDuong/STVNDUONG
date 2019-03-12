@@ -96,7 +96,7 @@
     letter-spacing: 0.75px;
     padding-bottom: 3rem;
     width: 110%;
-    font-size: 0.85vw;
+    font-size: 0.785vw;
   }
 
   .project-tech {
@@ -188,7 +188,7 @@
         font-size: 5.75vw;
       }
       .project-description {
-        font-size: 1.85vw;
+        font-size: 1.5vw;
       }
       .project-tech {
         font-size: 2vw;
@@ -241,13 +241,14 @@
       font-size: 3.5rem;
     }
     .project-description {
-      font-size: 1.25rem;
+      font-size: 1.05rem;
       width: 100%;
     }
     .project-tech {
       font-size: 1.35rem;
       display: flex !important;
       flex-direction: column !important;
+      margin: auto;
     }
   }
 
@@ -258,7 +259,7 @@
 
 @media screen and (max-width: 580px) {
   .landing-self-container {
-    padding: 18rem 2rem;
+    padding: 15.8rem 2rem;
     .landing-self-name {
       font-size: 1.35rem;
       white-space: nowrap;
@@ -272,7 +273,7 @@
     }
   }
   .landing-project-container {
-    padding: 8rem 2rem;
+    padding: 5.8rem 2rem;
     .project-featuring {
       font-size: 0.85rem !important;
     }
@@ -285,6 +286,15 @@
     }
     .project-tech {
       font-size: 0.85rem;
+      margin: auto;
     }
+  }
+
+  .landing-project-images {
+    margin: -1rem auto 1rem auto;
+  }
+
+  .view-btn {
+    margin-top: 5rem;
   }
 }

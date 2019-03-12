@@ -1,9 +1,21 @@
 @import '../../styles.scss';
 
+.project-descr-container {
+  width: 60vw;
+  margin: 3.5rem auto;
+  font-family: $secondary-font;
+
+  img {
+    width: 100%;
+  };
+}
+.project-intro-text {
+  margin: auto;
+}
 .project-title {
   font-weight: 400;
-  font-size: 1.415rem;
-  letter-spacing: 0.25px;
+  font-size: 1.75rem;
+  letter-spacing: 0.5px;
 }
 .project-title-bold {
   font-weight: 800;
@@ -12,4 +24,34 @@
   width: 6.75rem;
   height: 0.175rem;
   background-color: #8F57EB;
+}
+.project-descr {
+  width: 80%;
+  line-height: 138%;
+  letter-spacing: 0.05px;
+}
+
+
+
+@media screen and (max-width: 1065px) {
+
+  .mobile-show {
+    display: block !important;
+  }
+  .mobile-hidden {
+    display: none !important;
+  }
+
+  .project-descr-container {
+    flex-direction: column !important;
+
+    img.mobile-show {
+      display: flex !important;
+      margin-bottom: 2.75rem;
+    }
+
+    .project-descr {
+      width: 100%;
+    }
+  }
 }
