@@ -8,48 +8,64 @@ import { Router } from '@angular/router';
 })
 export class WorksComponent implements OnInit {
 
-  works: any = {
-    'snapIoT': [
-      {
-        'title1': 'snap',
-        'title2': 'Clinical',
-        'role': 'Lead Front-End Software Engineer',
-        'preview': 'assets/images/snapClinicalPatientPage.png',
-        'color': '#8F57EB'
-      },
-      {
-        'title1': 'Stem',
-        'title2': 'Immune',
-        'role': 'UX Designer',
-        'preview': 'assets/images/ELN/project_main.png',
-        'color': '#2D9CDB'
-      }
-    ],
-    'self': [
-      {
-        'title1': 'REG',
-        'title2': 'EX',
-        'description': 'REGEX and references and tester',
-        'preview': '',
-        'color': '#F1C7C7'
-      },
-      {
-        'title1': 'Cafe ',
-        'title2': 'Bassam',
-        'description': 'Local San Diego Coffee House',
-        'preview': 'assets/images/bassam.jpg',
-        'color': '#F29856'
-      }
-    ]
-  };
+  works: any;
 
-  constructor(private router: Router) { }
-
-  ngOnInit() {
+  constructor(private router: Router) {
+    this.works  = {
+      'snapIoT': [
+        {
+          'title1': 'snap',
+          'title2': 'Clinical',
+          'role': 'Lead Front-End Software Engineer',
+          'preview': 'assets/images/snapClinicalPatientPage.png',
+          'color': '#8F57EB',
+          'route': () =>  this.works.snapIoT[0].title1 + this.works.snapIoT[0].title2
+        },
+        {
+          'title1': 'Stem',
+          'title2': 'Immune',
+          'role': 'UX Designer',
+          'preview': 'assets/images/ELN/project_main.png',
+          'color': '#2D9CDB',
+          'route': () =>  this.works.snapIoT[1].title1 + this.works.snapIoT[1].title2
+        }
+      ],
+      'self': [
+        {
+          'title1': 'REG',
+          'title2': 'EX',
+          'description': 'REGEX and references and tester',
+          'preview': '',
+          'color': '#F1C7C7',
+          'route': ''
+        },
+        {
+          'title1': 'Cafe ',
+          'title2': 'Bassam',
+          'description': 'Local San Diego Coffee House',
+          'preview': 'assets/images/bassam.jpg',
+          'color': '#F29856',
+          'route': 'https://abcduong.github.io/CafeBassam/'
+        }
+      ]
+    };
   }
 
+   ngOnInit() {
+
+   }
+
   getRoute(route: string) {
-    this.router.navigate([route]);
+    if (!route) {
+      console.log('route does not exist');
+      return;
+    }
+    if (route.startsWith('http')) {
+      window.open(route);
+      window.open = null;
+    } else {
+      this.router.navigate([route]);
+    }
   }
 
 }

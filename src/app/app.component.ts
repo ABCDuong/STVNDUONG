@@ -18,7 +18,6 @@ export class AppComponent implements OnInit {
 
   getRoute() {
     this.currRoute = this.router.url;
-    console.log('ROUTER: ', this.router.url);
   }
 
 

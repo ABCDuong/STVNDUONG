@@ -19,7 +19,6 @@ export class NavbarComponent {
     this.router.navigate([route]);
     this.currRoute = route;
     this.routeService.activeRoute = this.currRoute;
-    console.log('currRoute: ', this.currRoute);
   }
 
   getResume() {

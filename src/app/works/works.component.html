@@ -1,6 +1,6 @@
 <div class="works-component">
   <div class="works-container" fxLayout="column" fxLayoutAlign="center center">
-    <div class="works-title">
+    <div class="works-title" fxLayout="row nowrap">
       Projects at<span class="work-title-highlight">&nbsp;SnapIoT</span>
       <div class="works-title-dash"></div>
     </div>
@@ -18,7 +18,7 @@
   </div>
   
   <div class="works-container" fxLayout="column" fxLayoutAlign="center center">
-    <div class="works-title">
+    <div class="works-title" fxLayout="row nowrap">
       <span class="work-title-highlight">Self</span>&nbsp;Projects
       <div class="works-title-dash"></div>
     </div>
@@ -30,7 +30,7 @@
           [projectTitle2]="work.title2"
           [projectRole]="work.description"
           [projectColor]="work.color"
-          (onView)="getRoute(work.title1 + work.title2)"></app-work-card>
+          (onView)="getRoute(work.route)"></app-work-card>
       </div>
     </div>
   </div>

@@ -13,6 +13,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { NavbarComponent } from './navbar/navbar.component';
 import { WorkCardComponent } from './work-card/work-card.component';
 import { SnapClinicalComponent } from './snap-clinical/snap-clinical.component';
+import { StemImmuneComponent } from './stem-immune/stem-immune.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { SnapClinicalComponent } from './snap-clinical/snap-clinical.component';
     ContactComponent,
     NavbarComponent,
     WorkCardComponent,
-    SnapClinicalComponent
+    SnapClinicalComponent,
+    StemImmuneComponent
   ],
   imports: [
     BrowserModule,
