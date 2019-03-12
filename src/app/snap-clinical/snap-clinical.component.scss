@@ -7,15 +7,20 @@
 
   img {
     width: 100%;
+    max-width: 500px;
   };
 }
 .project-intro-text {
-  margin: auto;
+  margin: 3.15rem auto;
 }
-.project-title {
+.project-title,
+.project-section-title {
   font-weight: 400;
   font-size: 1.75rem;
   letter-spacing: 0.5px;
+}
+.project-section-title {
+  font-size: 1.5rem;
 }
 .project-title-bold {
   font-weight: 800;
@@ -24,11 +29,15 @@
   width: 6.75rem;
   height: 0.175rem;
   background-color: #8F57EB;
+  margin-top: 0.315rem;
 }
 .project-descr {
   width: 80%;
   line-height: 138%;
   letter-spacing: 0.05px;
+}
+.project-section-descr {
+  width: 100%;
 }
 
 
