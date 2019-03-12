@@ -1,7 +1,8 @@
 <div [ngClass]="routeService.currRoute === 'home' ? 'nav-bar' : 'nav-bar-middle'" fxLayout="row nowrap" fxLayoutAlign="start center">
   <img class="nav-link nav-logo" src="assets/images/Logo-sm.png" alt="logo" (click)="getRoute('home')">
 
-  <div class="nav-link" [ngClass]="currRoute === 'work' ? 'nav-link-active' : ''" (click)="getRoute('work')">
+  <div class="nav-link" 
+       [ngClass]="(routeService.currRoute === 'work' || routeService.currRoute === 'snapClinical' || routeService.currRoute === 'StemImmune' || routeService.currRoute === 'regex') ? 'nav-link-active' : ''" (click)="getRoute('work')">
     <p>work</p>
     <div class="nav-underline"></div>
   </div>

@@ -1,19 +1,19 @@
 @import '../../styles.scss';
 
 .card-container {
-  border-radius: 8px;
+  border-radius: 5px;
   border: none;
-  box-shadow: 1px 1px 5px #777;
-  width: 450px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); // box-shadow: 1px 1px 5px #777;
+  width: 420px;
   height: auto;
   font-family: $secondary-font;
   padding-bottom: 1rem;
 }
 
 .project-preview img {
-  width: 450px;
-  height: 280px;
-  border-radius: 8px 8px 0 0;
+  width: 420px;
+  height: 250px;
+  border-radius: 5px 5px 0 0;
 }
 
 .project-title-container {
