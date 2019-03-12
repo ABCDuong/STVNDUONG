@@ -61,8 +61,8 @@ export class WorksComponent implements OnInit {
       return;
     }
     if (route.startsWith('http')) {
-      window.open(route);
-      window.open = null;
+      let newWindow = window.open(route);
+      newWindow = null;
     } else {
       this.router.navigate([route]);
     }
