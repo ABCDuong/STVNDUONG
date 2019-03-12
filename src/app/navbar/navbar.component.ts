@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { RouteService } from '../route.service';
 
@@ -7,7 +7,7 @@ import { RouteService } from '../route.service';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss']
 })
-export class NavbarComponent {
+export class NavbarComponent implements OnInit {
   currRoute = 'home';
 
   constructor (
@@ -15,10 +15,14 @@ export class NavbarComponent {
     private routeService: RouteService
   ) {}
 
+  ngOnInit() {
+    this.routeService.currRoute = this.currRoute;
+  }
+
   getRoute(route: string) {
     this.router.navigate([route]);
     this.currRoute = route;
-    this.routeService.activeRoute = this.currRoute;
+    this.routeService.currRoute = this.currRoute;
   }
 
   getResume() {

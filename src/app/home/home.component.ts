@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { RouteService } from '../route.service';
 
 @Component({
   selector: 'app-home',
@@ -8,13 +9,17 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(
+    private router: Router,
+    private routeService: RouteService
+  ) { }
 
   ngOnInit() {
   }
 
   getRoute(route: string) {
     this.router.navigate([route]);
+    this.routeService.currRoute = route;
   }
 
 }

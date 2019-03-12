@@ -1,4 +1,4 @@
-<div [ngClass]="currRoute === 'home' ? 'nav-bar' : 'nav-bar-middle'" fxLayout="row nowrap" fxLayoutAlign="start center">
+<div [ngClass]="routeService.currRoute === 'home' ? 'nav-bar' : 'nav-bar-middle'" fxLayout="row nowrap" fxLayoutAlign="start center">
   <img class="nav-link nav-logo" src="assets/images/Logo-sm.png" alt="logo" (click)="getRoute('home')">
 
   <div class="nav-link" [ngClass]="currRoute === 'work' ? 'nav-link-active' : ''" (click)="getRoute('work')">
