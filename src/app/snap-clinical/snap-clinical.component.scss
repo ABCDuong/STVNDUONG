@@ -1,8 +1,13 @@
 @import '../../styles.scss';
 
+:host {
+  background-color: #EFEFEB;
+  height: 100%;
+}
+
 .project-descr-container {
   width: 45vw;
-  margin: 3.5rem auto;
+  margin: 5rem auto 3.5rem auto;
   font-family: $secondary-font;
 
   img {
@@ -39,6 +44,12 @@
 .project-section-descr {
   line-height: 128%;
   width: 100%;
+}
+
+.project-image-slide {
+  width: 100vw;
+  height: 10rem;
+  background-color: #FFF;
 }
 
 
