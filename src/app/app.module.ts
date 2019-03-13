@@ -16,6 +16,9 @@ import { SnapClinicalComponent } from './snap-clinical/snap-clinical.component';
 import { StemImmuneComponent } from './stem-immune/stem-immune.component';
 
 
+import { NgxCarousel3dModule } from 'ngx-carousel-3d';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +35,8 @@ import { StemImmuneComponent } from './stem-immune/stem-immune.component';
     BrowserAnimationsModule,
     FlexLayoutModule,
     AppRoutingModule,
-    MatButtonModule
+    MatButtonModule,
+    NgxCarousel3dModule
   ],
   providers: [],
   bootstrap: [AppComponent]
