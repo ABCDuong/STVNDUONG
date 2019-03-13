@@ -60,6 +60,10 @@ $secondary-font: 'Muli', sans-serif;
 }
 
 
+:host {
+  @extend .fade-in;
+}
+
 
 body {
   font-family: $main-font;

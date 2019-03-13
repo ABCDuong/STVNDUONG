@@ -9,6 +9,7 @@
   width: 45vw;
   margin: 5rem auto 3.5rem auto;
   font-family: $secondary-font;
+  @extend .fade-in;
 
   img {
     width: 100%;

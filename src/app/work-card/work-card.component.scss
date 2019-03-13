@@ -9,6 +9,7 @@
   font-family: $secondary-font;
   padding-bottom: 1rem;
   background-color: #FFF;
+  @extend .fade-in;
 }
 
 .project-preview img {
