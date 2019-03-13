@@ -1,3 +1,21 @@
-<p>
-  contact works!
-</p>
+<div class="contact-container" fxLayout="column">
+  <div class="contact-entity" fxLayout="row nowrap">
+    <img class="contact-entity-icon" src="assets/images/if_linkedin-logo.svg" alt="linkedIn-icon">
+    <span class="contact-text" (click)="getRoute(linkedIn)">{{linkedIn}}</span>
+    <img class="copy-icon" src="assets/images/copy.svg" alt="copy-clipboard-icon" (click)="copyClipboard(linkedIn)">
+
+    <div class="copied-msg-container" [ngClass]="copied1 ? 'show' : ''">
+      <div class="copied-text">Copied to clipboard!</div>
+    </div>
+  </div>
+
+  <div class="contact-entity" fxLayout="row nowrap">
+    <img class="contact-entity-icon" src="../../assets/images/mail.svg" alt="email-icon">
+    <span class="contact-text" (click)="getRoute(email)">{{email}}</span>
+    <img class="copy-icon" src="assets/images/copy.svg" alt="copy-clipboard-icon" (click)="copyClipboard(email)">
+
+    <div class="copied-msg-container" [ngClass]="copied2 ? 'show' : ''">
+      <div class="copied-text">Copied to clipboard!</div>
+    </div>
+  </div>
+</div>
