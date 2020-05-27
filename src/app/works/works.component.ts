@@ -35,12 +35,12 @@ export class WorksComponent implements OnInit, AfterViewInit {
       ],
       'self': [
         {
-          'title1': 'REG',
-          'title2': 'EX',
-          'description': 'REGEX references and tester',
-          'preview': '',
+          'title1': 'COR',
+          'title2': 'AL',
+          'description': 'WORK IN-PROGRESS: A dashboard to log correlations. Flexible data entries.',
+          'preview': 'assets/images/coral_signup_page.png',
           'color': '#F1C7C7',
-          'route': ''
+          'route': 'https://abcduong.github.io/CORAL/'
         },
         {
           'title1': 'Cafe ',
