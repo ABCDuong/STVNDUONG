@@ -26,7 +26,7 @@ export class NavbarComponent implements OnInit {
   }
 
   getResume() {
-    let newWindow = window.open('https://drive.google.com/file/d/1CWiMDSLvwQjk4Ex0ytczjd-e9xPH6v7m/view?usp=sharing', '_blank');
+    let newWindow = window.open('https://drive.google.com/open?id=1FgaobqB1bRDYoBy8k4ZI3GKCKqAY_3V3', '_blank');
     newWindow = null;
   }
 }
