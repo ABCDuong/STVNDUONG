@@ -38,7 +38,7 @@ export class WorksComponent implements OnInit, AfterViewInit {
           'title1': 'COR',
           'title2': 'AL',
           'description': '***WORK IN-PROGRESS: A dashboard to log correlations. Flexible data entries.',
-          'preview': 'assets/images/coral_signup_page.png',
+          'preview': 'assets/images/coral/calendar-view.png',
           'color': '#F1C7C7',
           'route': 'https://abcduong.github.io/CORAL/'
         },
